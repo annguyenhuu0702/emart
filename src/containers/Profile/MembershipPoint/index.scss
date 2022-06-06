@@ -1,0 +1,105 @@
+@import "../../../styles/response.scss";
+
+.membership-point {
+  .content {
+    .card-barcode {
+      max-width: 434px;
+      border: none;
+      background-image: url("https://emartmall.com.vn/catalog/view/theme/pav_bigmart/image/default/card-customer.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      padding-top: 35px;
+      padding-bottom: 185px;
+      border-radius: 20px;
+
+      .img {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 82px;
+        padding-top: 20px;
+        img {
+          height: 92px;
+          object-fit: cover;
+        }
+      }
+    }
+    h4 {
+      color: #333;
+      font-size: 2.2rem;
+      font-weight: 400;
+      margin-bottom: 14px;
+      margin: 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    p {
+      color: #666;
+      margin: 8px 0 0 0;
+    }
+    .table-point {
+      .table-bordered {
+        width: 100%;
+        background: transparent;
+        border: 1px solid #ddd;
+
+        thead {
+          tr {
+            td {
+              background: transparent;
+              color: #333;
+              border: 1px solid #ddd;
+              text-transform: capitalize;
+              font-size: 1.2rem;
+              padding: 6px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              border: 1px solid #ddd;
+              text-align: center;
+              font-size: 1.2rem;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+
+    .pagination {
+      text-align: right;
+      font-size: 1.1rem;
+      color: #666;
+    }
+    .btn-continue {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 4px;
+      @include mobile {
+        padding-bottom: 10px;
+      }
+      button {
+        outline: none;
+        background: #f9b618;
+        border: #f9b618;
+        text-transform: uppercase;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+
+        span {
+          padding: 6px 8px;
+        }
+      }
+    }
+  }
+}

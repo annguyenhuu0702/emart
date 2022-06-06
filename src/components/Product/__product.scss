@@ -1,0 +1,98 @@
+@import "../../styles//response.scss";
+
+.list-product {
+  display: flex;
+  padding: 0 4px;
+  .item {
+    margin: 4px;
+    height: 100%;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      transition: all 0.3s;
+      border: 0 solid transparent;
+      box-shadow: 0 1px 5px 2px #ccc;
+    }
+    .img {
+      display: block;
+      position: relative;
+      padding-top: 16px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .sale {
+        position: absolute;
+        right: 0;
+        top: 4px;
+        background-color: #f95151;
+        font-size: 1.2rem;
+        padding: 2px 8px;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+    .name {
+      font-size: 1.3rem;
+      height: 36px;
+      margin: 50px 10px 0 10px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      @include tablet {
+        font-size: 1.2rem;
+      }
+      a {
+        color: #666;
+      }
+    }
+    .price-wishlist {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.4rem;
+      margin-top: 10px;
+
+      @include tablet {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: initial;
+        padding: 0 0 0 10px;
+      }
+      .price {
+        margin-left: 10px;
+        @include tablet {
+          margin: 0;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        .old {
+          color: #666;
+          text-decoration: line-through;
+          margin-right: 6px;
+          font-size: 1.2rem;
+        }
+      }
+      .wishlist {
+        display: flex;
+        margin-right: 10px;
+        button {
+          border: 1px solid #666;
+          outline: none;
+          border-radius: 3px;
+          background: transparent;
+          &:hover {
+            background-color: #f9b618;
+            border: 1px solid #f9b618;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

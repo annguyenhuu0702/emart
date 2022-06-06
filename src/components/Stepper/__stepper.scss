@@ -1,0 +1,75 @@
+@import "../../styles/response.scss";
+
+.step-one {
+  .ant-steps-item-container {
+    .ant-steps-item-icon {
+      background: #f9b618 !important;
+    }
+    .ant-steps-item-content {
+      .ant-steps-item-title {
+        &::after {
+          top: 8px;
+          height: 6px;
+          background-color: #f9b618;
+        }
+      }
+    }
+  }
+}
+
+.step-two {
+  .ant-steps-item-container {
+    .ant-steps-item-content {
+      .ant-steps-item-title {
+        &::after {
+          top: 8px;
+          height: 6px;
+          background: #999;
+        }
+      }
+    }
+  }
+}
+
+.ant-steps {
+  flex-direction: row;
+  .step-one,
+  .step-two,
+  .step-three {
+    .ant-steps-item-container {
+      display: flex;
+      align-items: center;
+      padding-top: 30px;
+      .ant-steps-item-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .ant-steps-item-content {
+        overflow: visible;
+        .ant-steps-item-title {
+          display: block;
+          width: 100%;
+          line-height: 14px;
+          span {
+            position: absolute;
+            top: -32px;
+            left: -50px;
+            text-align: left;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .ant-steps {
+    display: none;
+  }
+}

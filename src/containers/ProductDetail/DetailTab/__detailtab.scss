@@ -1,0 +1,33 @@
+@import "../../../styles/response.scss";
+
+.nav-tab {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  background: #313532;
+  .item {
+    padding: 20px 30px;
+    @include mobile {
+      padding: 10px;
+    }
+    a {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: #fff;
+    }
+  }
+  .active {
+    background: #fff;
+    a {
+      color: #f9b618;
+    }
+  }
+}
+
+.tab-content {
+  line-height: 24px;
+  color: #333;
+  font-size: 13px;
+  padding: 24px;
+}

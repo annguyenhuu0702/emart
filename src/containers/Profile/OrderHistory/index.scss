@@ -1,0 +1,30 @@
+.order-history {
+  .content {
+    .order-history {
+      tbody {
+        tr {
+          td:first-child {
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            width: inherit;
+            white-space: nowrap;
+            padding-right: 6px;
+          }
+          td {
+            width: 25%;
+            font-size: 1.2rem;
+            padding: 4px 0;
+            text-align: center;
+            color: #333;
+            border: 1px solid #ddd;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@import "../../styles/response.scss";
+.footer {
+  .footer-top {
+    background: #636363;
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      @include tablet {
+        padding: 0 20px;
+      }
+
+      .item {
+        padding-top: 20px;
+
+        ul {
+          list-style: none;
+          padding-left: 0;
+
+          li {
+            font-size: 1.2rem;
+            a {
+              color: #fff;
+              position: relative;
+
+              &::before {
+                content: "";
+              }
+            }
+
+            &:hover {
+              a {
+                color: #f9b618;
+                &::before {
+                  content: "\f105";
+                  font-family: FontAwesome;
+                  position: absolute;
+                  left: -10px;
+                  top: -1px;
+                  z-index: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    background: #222;
+
+    @include tablet {
+      padding: 0 20px;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .logo {
+        margin-bottom: 12px;
+        padding-top: 16px;
+      }
+      .block {
+        .siteinfo {
+          font-size: 1.3rem;
+          color: #ccc;
+
+          .siteinfo-bottom {
+            margin-top: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid #666;
+          }
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .copy-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #666;
+        font-size: 1.3rem;
+        padding: 16px 0;
+
+        .menu {
+          ul {
+            list-style: none;
+            margin-bottom: 0;
+            display: flex;
+            padding-left: 0;
+            li {
+              margin: 0 6px;
+              a {
+                color: #666;
+                &:hover {
+                  color: #f9b618;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobile
+
+@include mobile {
+  .footer {
+    .footer-top {
+      .content {
+        .item {
+          padding: 10px;
+        }
+      }
+    }
+
+    .footer-bottom {
+      padding: 10px;
+    }
+  }
+}

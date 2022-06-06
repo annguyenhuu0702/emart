@@ -1,0 +1,17 @@
+@import "../../../styles/response.scss";
+
+.content-right {
+  .content {
+    padding-bottom: 20px !important;
+    h4 {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      margin: 0;
+      font-size: 1.4rem;
+      color: #666;
+    }
+  }
+}

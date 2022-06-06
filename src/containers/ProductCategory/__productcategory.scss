@@ -1,0 +1,110 @@
+@import "../../styles/response.scss";
+.product-category {
+  background: #f3f3f3;
+
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    .breadcrumb {
+      ul {
+        list-style: none;
+        margin-bottom: 0;
+        padding: 10px 0;
+        display: flex;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+
+        li {
+          background: url("https://emartmall.com.vn/image/catalog/bg-sub.png") no-repeat right center;
+          padding: 6px 20px 6px 10px;
+
+          &:hover {
+            a {
+              color: #f9b618;
+            }
+          }
+
+          a {
+            color: #999;
+          }
+        }
+
+        li:last-child {
+          background-image: none;
+
+          a {
+            color: #333;
+          }
+        }
+      }
+    }
+
+    .product-filter-panel {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 10px;
+      margin: 0 4px 6px 4px;
+
+      .title {
+        h1 {
+          margin: 0;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+
+          @include mobile {
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      .sort-product {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+      }
+    }
+
+    .products {
+      background: #f3f3f3;
+      .list-product {
+        .ant-col-lg-5 {
+          margin-bottom: 6px;
+          .item {
+            background: #fff;
+            margin: 4px 2px 4px 0;
+            .name {
+              margin: 10px 10px 0 10px;
+            }
+            .price-wishlist {
+              margin-top: 0;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+
+    .pagination {
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+}
+
+.products {
+  @include desktop {
+    background: #f3f3f3;
+    .list-product {
+      .ant-col-lg-5 {
+        max-width: 20%;
+        flex: 0 0 20%;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import "../../styles/response.scss";
+
+.page-register {
+  background: #f3f3f3;
+  .register {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .heading-register {
+      font-size: 2.4rem;
+      text-transform: capitalize;
+      border-bottom: 1px solid #ccc;
+
+      @include mobile {
+        padding: 0 10px;
+        margin: 0;
+      }
+    }
+
+    .form-register {
+      justify-content: center;
+
+      .ant-col-lg-12 {
+        background: #fff;
+        padding: 20px 10px;
+      }
+
+      #register {
+        .ant-form-item {
+          margin-bottom: 10px;
+          @include mobile {
+            margin-bottom: 0;
+          }
+          display: block;
+
+          .ant-form-item-control {
+            .ant-form-item-control-input-content {
+              .ant-btn-default {
+                position: absolute;
+                top: 34px;
+                right: 0px;
+                height: 28px;
+                background: #f9b618;
+                border: #f9b618;
+                color: #fff;
+                font-weight: normal;
+                font-size: 1.3rem;
+                border-radius: 0;
+
+                @include mobile {
+                  top: 42px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .btn-wrap {
+        display: flex;
+        justify-content: space-between;
+        @include mobile {
+          margin-top: 16px;
+        }
+        .ant-btn-default {
+          color: #fff;
+          background: #f9b618;
+          border: #f9b618;
+          text-transform: uppercase;
+          display: flex;
+          text-align: center;
+          align-items: center;
+
+          span {
+            padding: 10px 20px;
+          }
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        margin: 10px 0 0 0;
+        color: #999;
+      }
+    }
+  }
+}

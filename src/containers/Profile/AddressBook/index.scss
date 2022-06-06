@@ -1,0 +1,77 @@
+@import "../../../styles/response.scss";
+
+.address-book {
+  .content {
+    .wrap-info {
+      display: flex;
+      font-size: 1.3rem;
+      border-bottom: 1px solid #ededed;
+      margin: 0 10px;
+      padding: 16px 0;
+      color: #333;
+      @include mobile {
+        font-size: 1.2rem;
+      }
+      .name {
+        width: 25%;
+        @include mobile {
+          width: 40%;
+        }
+
+        h3 {
+          margin: 0;
+        }
+      }
+      .address {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        @include mobile {
+          width: 40%;
+        }
+      }
+      .btn-edit {
+        width: 25%;
+        @include mobile {
+          width: 20%;
+        }
+        .ant-btn {
+          outline: none;
+          background: #f9b618;
+          border: #f9b618;
+          text-transform: uppercase;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          font-size: 1.2rem;
+          span {
+            padding: 8px 16px;
+            display: block;
+
+            @include mobile {
+              padding: 6px 10px;
+            }
+          }
+        }
+      }
+    }
+    .btn-new-address {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+      .ant-btn {
+        outline: none;
+        background: #f9b618;
+        border: #f9b618;
+        text-transform: uppercase;
+        color: #fff;
+        // display: flex;
+        // align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

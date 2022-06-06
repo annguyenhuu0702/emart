@@ -1,0 +1,48 @@
+.total-amount {
+  width: 100%;
+  border: 1px solid #ddd;
+  margin: 16px 0;
+  thead {
+    tr {
+      td {
+        background: #333;
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+        padding: 15px 10px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.total-amount {
+  tr {
+    background-color: #fff;
+    td {
+      border: 1px solid #eee;
+      font-size: 1.3rem;
+      padding: 8px;
+      a {
+        color: #333;
+
+        &:hover {
+          color: #f9b618;
+        }
+      }
+
+      i {
+        color: white;
+        border-radius: 50%;
+        background: #000;
+        margin: 0 2px;
+      }
+    }
+    .text-left {
+      text-align: left;
+    }
+    .text-right {
+      text-align: right;
+    }
+  }
+}

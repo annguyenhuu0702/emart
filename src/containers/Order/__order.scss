@@ -1,0 +1,417 @@
+@import "../../styles/response.scss";
+
+.check-cart {
+  background: #f3f3f3;
+  padding-bottom: 10px;
+
+  .checkcart-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include tablet {
+      padding: 0 20px;
+    }
+    .shopping-cart {
+      padding: 10px 0;
+
+      .step-two {
+        .ant-steps-item-container {
+          .ant-steps-item-icon {
+            background: #f9b618;
+          }
+          .ant-steps-item-content {
+            .ant-steps-item-title {
+              &::after {
+                top: 8px;
+                height: 6px;
+                background-color: #f9b618;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .payment-order {
+      background: #fff;
+      margin-bottom: 20px;
+
+      .wrap-info {
+        display: flex;
+        @include mobile {
+          display: block;
+        }
+        @include tablet {
+          display: block;
+        }
+        .infocus-payment {
+          @include tablet {
+            width: 100%;
+          }
+          @include mobile {
+            width: 100%;
+          }
+          width: 60%;
+          padding: 10px;
+          border-right: 1px solid #eee;
+
+          .content {
+            .panel-heading {
+              text-transform: uppercase;
+              padding: 10px 0 10px 10px;
+              background: #ccc;
+              font-size: 1.4rem;
+              color: #000;
+              h4 {
+                margin: 0;
+                font-weight: 600;
+              }
+            }
+            form {
+              margin-top: 10px;
+              ul {
+                margin-bottom: 0;
+                padding-left: 0;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                li {
+                  width: 100%;
+                  padding: 6px 0;
+                  border: 1px solid #ccc;
+                  text-align: center;
+                  color: #000;
+
+                  label {
+                    margin-left: 10px;
+                    span {
+                      margin-left: 6px;
+                    }
+                  }
+                }
+                .shipping {
+                  margin-right: 10px;
+                }
+                .pickup {
+                  margin-left: 10px;
+                  border: 1px solid #ccc;
+                  color: #000;
+                }
+
+                .active {
+                  border: 1px solid #f9b618;
+                  color: #f9b618;
+                }
+              }
+
+              .shipping {
+                .ant-form-item-control-input-content {
+                  display: flex;
+                  @include mobile {
+                    flex-direction: column;
+                  }
+                  .newaddress {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    margin-left: 16px;
+                    width: 130px;
+                    border: 1px solid #f9b618;
+                    background: #f9b618;
+                    border-radius: 5px;
+                    padding: 0 6px;
+
+                    @include mobile {
+                      margin: 4px 0;
+                      width: 102px;
+                    }
+
+                    &:hover {
+                      cursor: pointer;
+                    }
+
+                    span {
+                      margin-left: 6px;
+                      &:hover {
+                        color: #fff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .shipping-cost {
+              display: flex;
+              align-items: center;
+              span {
+                margin: 0 30px 0 0;
+                font-size: 1.2rem;
+                cursor: default;
+              }
+              label {
+                margin: 0 0 0 30px;
+                font-size: 1.2rem;
+                color: #333;
+                opacity: 0.9;
+
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+
+            .vat-info {
+              .title {
+                text-transform: uppercase;
+                padding: 10px 0 10px 10px;
+                background: #ccc;
+                font-size: 1.3rem;
+                color: #000;
+
+                margin: 20px 0 10px 0;
+                h4 {
+                  margin: 0;
+                  font-weight: 600;
+                }
+              }
+
+              .check-invoice {
+                font-size: 1.2rem;
+                color: #f9b618;
+                span {
+                  margin-left: 10px;
+                }
+                p {
+                  color: red;
+                }
+              }
+            }
+
+            .delivery-message {
+              .title {
+                text-transform: uppercase;
+                padding: 10px 0 10px 10px;
+                background: #ccc;
+                font-size: 1.3rem;
+                color: #000;
+
+                margin: 20px 0 10px 0;
+                h4 {
+                  margin: 0;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+        .infocart-payment {
+          width: 40%;
+          padding: 10px;
+          @include tablet {
+            width: 100%;
+          }
+          @include mobile {
+            width: 100%;
+          }
+
+          .emart-point {
+            .title {
+              text-transform: uppercase;
+              padding: 10px 0 10px 10px;
+              background: #ccc;
+              font-size: 1.3rem;
+              color: #000;
+
+              margin: 0 0 10px 0;
+              h4 {
+                margin: 0;
+                font-weight: 600;
+              }
+            }
+
+            .content {
+              font-size: 1.2rem;
+              .use-point {
+                display: flex;
+                margin-bottom: 10px;
+                span {
+                  width: 170px;
+                }
+                .point {
+                  width: calc(100% - 170px);
+                }
+                .select-point {
+                  width: calc(100% - 170px);
+
+                  input {
+                    display: block;
+                    width: 100%;
+                    padding: 6px 12px;
+                    font-size: 13px;
+                    line-height: 1.42857;
+                    color: #555;
+                    background-color: #fff;
+                    background: #eee;
+                    border: 1px solid #ebebeb;
+                    border-radius: 0;
+                    outline: none;
+                    cursor: not-allowed;
+                  }
+                  span {
+                    display: block;
+                    width: 100%;
+                    color: #2255b3;
+                    font-size: 12px;
+                    background: #e5f3ff;
+                    padding: 5px;
+                  }
+                }
+              }
+            }
+          }
+
+          .payment-method {
+            .title {
+              text-transform: uppercase;
+              padding: 10px 0 10px 10px;
+              background: #ccc;
+              font-size: 1.3rem;
+              color: #000;
+
+              margin: 0 0 10px 0;
+              h4 {
+                margin: 0;
+                font-weight: 600;
+              }
+            }
+            p {
+              font-size: 1.2rem;
+              color: #999;
+            }
+            .content-payment {
+              .radio {
+                display: flex;
+                align-items: center;
+                font-size: 1.2rem;
+                color: #666;
+
+                label {
+                  margin-left: 10px;
+                  img {
+                    width: 28px;
+                    height: 28px;
+                    object-fit: cover;
+                  }
+                  span {
+                    margin-left: 4px;
+                  }
+                }
+              }
+            }
+          }
+          .out-stock {
+            margin-top: 22px;
+            .title {
+              text-transform: uppercase;
+              padding: 10px 0 10px 10px;
+              background: #ccc;
+              font-size: 1.3rem;
+              color: #000;
+              margin: 0 0 10px 0;
+              h4 {
+                margin: 0;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+
+      .panel {
+        padding: 10px;
+        .total-amount {
+          text-transform: uppercase;
+          padding: 10px 0 10px 10px;
+          background: #ccc;
+          font-size: 1.3rem;
+          color: #000;
+
+          h4 {
+            font-weight: 600;
+            margin: 0;
+          }
+        }
+        .check-btn-confirm {
+          display: flex;
+          align-items: center;
+          font-size: 1.2rem;
+          justify-content: center;
+          color: #999;
+          a {
+            margin: 0 4px;
+            color: #000;
+            &:hover {
+              color: #f9b618;
+            }
+          }
+        }
+        .btn-confirm-order {
+          display: flex;
+          justify-content: center;
+          margin: 30px 0;
+
+          button {
+            border: none;
+            color: white;
+            background: #f9b618;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-form-item-label {
+  text-align: left;
+}
+.ant-form-item-control {
+  .ant-select-selection-item {
+    color: #555;
+    font-size: 1.2rem;
+  }
+  .ant-form-item-control-input-content {
+    .ant-input {
+      color: #555;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.ant-row {
+  .ant-form-item-label {
+    label {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// .ant-form-horizontal {
+//   .ant-row {
+//     .ant-form-item-control {
+//       .ant-form-item-control-input {
+//         .ant-form-item-control-input-content {
+//           .ant-form-item {
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

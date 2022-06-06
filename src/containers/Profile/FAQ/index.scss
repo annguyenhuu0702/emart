@@ -1,0 +1,29 @@
+.content-right {
+  .content {
+    h2 {
+      margin: 0;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 0;
+      padding: 10px;
+      text-transform: uppercase;
+      background: #ccc;
+      font-size: 1.6rem;
+    }
+    .accordion {
+      width: 100%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      color: #333;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      justify-content: space-between;
+    }
+  }
+  .panel {
+    margin: 2px 0 0 0;
+  }
+}

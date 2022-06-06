@@ -1,0 +1,143 @@
+@import "../../styles/response.scss";
+
+.wish-list-wrap {
+  background: #f3f3f3;
+  padding-bottom: 10px;
+
+  .wish-list {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .title {
+      background: #fff;
+      @include mobile {
+        border: 1px solid #f3f3f3;
+      }
+      h1 {
+        margin: 0;
+        color: #000;
+        font-size: 1.8rem;
+        padding: 10px 0 10px 10px;
+      }
+    }
+
+    .info-bar,
+    .product-item {
+      background: #666;
+      color: #fff;
+      padding: 5px 0;
+      font-size: 1.2rem;
+
+      .image {
+        text-align: center;
+      }
+      .product-name {
+        text-align: left;
+      }
+      .model {
+        text-align: right;
+      }
+      .stock {
+        text-align: center;
+      }
+      .unit-price {
+        text-align: center;
+      }
+      .action {
+        text-align: left;
+
+        .btn-wrap {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding: 0 10px 0 0;
+
+          .add-to-cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-right: 6px;
+            padding: 8px 16px;
+            background: #f9b618;
+            border: #f9b618;
+            width: 70%;
+          }
+
+          .remove {
+            width: 30%;
+
+            background: #e93434;
+            border: #e93434;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .info-bar {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .product-item {
+      background: #fff;
+      color: #333;
+      margin-bottom: 10px;
+
+      @include mobile {
+        .product-name {
+          span {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        }
+        .model {
+          display: none;
+        }
+        .stock {
+          display: none;
+        }
+        .unit-price {
+          margin: 0 4px;
+        }
+
+        .action {
+          margin: 0 4px;
+          .btn-wrap {
+            padding: 0;
+          }
+        }
+      }
+
+      .ant-row {
+        padding: 16px 0;
+        @include mobile {
+          flex-flow: row;
+        }
+      }
+    }
+
+    .btn-contiue {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 10px 0 0;
+      .continue {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        background: #f9b618;
+        border: #f9b618;
+        font-size: 1.2rem;
+        color: #fff;
+        span {
+          padding: 6px 16px;
+        }
+      }
+    }
+  }
+}

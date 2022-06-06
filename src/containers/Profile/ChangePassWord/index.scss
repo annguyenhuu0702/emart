@@ -1,0 +1,51 @@
+@import "../../../styles/response.scss";
+
+.change-password {
+  .content {
+    .ant-form {
+      padding: 0 16px;
+      .ant-form-item {
+        margin-bottom: 16px;
+        @include mobile {
+          margin-bottom: 0;
+        }
+        .ant-form-item-label {
+          @include mobile {
+            text-align: left;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+          text-align: right;
+        }
+      }
+      .btn-btn {
+        @include mobile {
+          margin-top: 8px;
+        }
+        .ant-form-item-control {
+          .ant-form-item-control-input {
+            .ant-form-item-control-input-content {
+              display: flex;
+              justify-content: flex-end;
+              @include mobile {
+                justify-content: inherit;
+              }
+              .ant-btn {
+                background: #f9b618;
+                border: #f9b618;
+                color: #fff;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                font-size: 1.2rem;
+                span {
+                  padding: 6px 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

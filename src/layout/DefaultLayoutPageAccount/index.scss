@@ -1,0 +1,31 @@
+@import "../../styles/response.scss";
+.page-account {
+  background: #f3f3f3;
+
+  .account {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0 40px 0;
+
+    .content-right {
+      background: #fff;
+      min-height: 600px;
+      @include mobile {
+        min-height: 400px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 10px 0 10px 10px;
+        margin: 0 10px;
+        border-bottom: 1px solid #ededed;
+      }
+      .content {
+        padding: 10px 10px 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+@import "../../styles/response.scss";
+
+.page-login {
+  background: #f3f3f3;
+  padding: 30px 0 200px 0;
+
+  @include tablet {
+    padding: 30px 0;
+  }
+
+  @include mobile {
+    padding: 30px 0;
+  }
+  .login {
+    background: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+
+      @include tablet {
+        align-items: baseline;
+      }
+
+      a {
+        margin: 0 20px;
+        i {
+          font-size: 4rem;
+        }
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .wrap-content-left {
+      @include tablet {
+        padding: 30px 0;
+        border-bottom: 1px solid #ccc;
+        margin: 0;
+      }
+
+      @include mobile {
+        padding: 20px 0;
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+      }
+      margin: 60px 0;
+      .content-left {
+        padding: 0 40px;
+        border-right: 1px solid #ccc;
+
+        #login {
+          .ant-form-item {
+            margin-bottom: 12px;
+
+            .ant-form-item-control-input {
+              .ant-form-item-control-input-content {
+                display: flex;
+                justify-content: center;
+                .ant-btn-primary {
+                  background: #f9b618;
+                  border: #f9b618;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  span {
+                    padding: 10px 10px;
+                  }
+                }
+              }
+            }
+          }
+          .login-form-forgot {
+            display: block;
+            text-align: right;
+            color: #000;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+
+            &:hover {
+              color: #f9b618;
+            }
+          }
+        }
+        .login-social {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+
+          p {
+            font-size: 1.1rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .content-right {
+      padding: 60px 40px;
+
+      @include tablet {
+        padding: 20px 40px;
+      }
+
+      @include mobile {
+        padding: 20px 40px;
+      }
+
+      .content {
+        display: flex;
+
+        @include mobile {
+          display: block;
+        }
+
+        .title {
+          font-size: 1.6rem;
+        }
+
+        .membership-card {
+          padding: 0 10px;
+
+          @include mobile {
+            margin: 20px 0;
+          }
+
+          .icon-register {
+            display: block;
+            text-align: center;
+            img {
+              width: 30%;
+              height: auto;
+              object-fit: cover;
+            }
+          }
+          p {
+            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            text-align: justify;
+          }
+        }
+        .yet-membership {
+          @include mobile {
+            .title {
+              margin-bottom: 0;
+            }
+          }
+          padding: 0 10px;
+          .social-icon {
+            height: 72px;
+            @include tablet {
+              height: 105px;
+            }
+
+            @include mobile {
+              margin-top: 0;
+            }
+            a {
+              margin: 0 6px;
+            }
+          }
+          p {
+            margin: 0;
+            font-size: 1.1rem;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
